@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Preparação para Entrevista | Jonathan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+            padding: 0 1.5rem;
+        }
+        .accordion-button.active + .accordion-content {
+            max-height: 2500px; /* Increased for quiz content */
+            padding: 1.5rem;
+        }
+        .likert-button {
+            transition: all 0.2s ease-in-out;
+        }
+        .likert-button:hover, .likert-button.selected {
+            transform: scale(1.05);
+            background-color: #2563eb; /* blue-600 */
+            color: white;
+        }
+        #quiz-progress-bar {
+            transition: width 0.3s ease-in-out;
+        }
+        .checklist-item.completed label {
+            text-decoration: line-through;
+            color: #9ca3af;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8 max-w-4xl">
+        <!-- Header -->
+        <header class="text-center mb-10">
+            <h1 class="text-3xl md:text-4xl font-bold text-blue-800">Plataforma de Preparação Avançada</h1>
+            <p class="text-lg text-gray-600 mt-2">Jonathan, Rumo à Gestão Hospitalar</p>
+            <div class="w-24 h-1 bg-blue-600 mx-auto mt-4 rounded"></div>
+        </header>
+
+        <div class="space-y-4">
+            <!-- Módulo 1: A Mentalidade do Gestor -->
+            <div class="bg-white rounded-lg shadow-md">
+                <button class="accordion-button w-full text-left p-6 flex justify-between items-center focus:outline-none">
+                    <span class="text-xl font-semibold text-blue-700">Módulo 1: A Mentalidade do Gestor</span>
+                    <svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div class="accordion-content">
+                    <p class="mb-4">O erro nº 1 de profissionais em transição é responder às perguntas como técnico, e não como gestor. Seu objetivo é mostrar que você pensa de forma macro: **orçamento, eficiência, indicadores (KPIs), estratégia e liderança.**</p>
+                    <div class="border-t pt-4">
+                        <h3 class="font-semibold text-lg mb-2">Mude sua Perspectiva (DE/PARA):</h3>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="border-l-4 border-red-400 p-4 bg-red-50 rounded">
+                                <h4 class="font-bold text-red-800">DE (Visão Técnica):</h4>
+                                <p class="text-sm">"No meu dia a dia, eu administrava medicamentos, cuidava das escalas e garantia o bem-estar do paciente na unidade."</p>
+                            </div>
+                            <div class="border-l-4 border-green-400 p-4 bg-green-50 rounded">
+                                <h4 class="font-bold text-green-800">PARA (Visão Gerencial):</h4>
+                                <p class="text-sm">"Na minha função de liderança no InCor, eu **gerenciava o fluxo de trabalho** da equipe e **otimizava a alocação de recursos** para garantir a segurança e a qualidade no atendimento. Meu foco era garantir que os **processos** estivessem alinhados com os **indicadores de qualidade** do hospital."</p>
+                            </div>
+                        </div>
+                        <div class="mt-6 border-l-4 border-blue-400 p-4 bg-blue-50 rounded">
+                            <h4 class="font-bold text-blue-800">O Indicador Final (A Saideira!!! rs): A Conversa foi Leve e Divertida?</h4>
+                            <p class="text-sm mt-2">Um profissional sênior não vai para uma entrevista como se fosse para uma guerra. O objetivo não é "vencer" o recrutador, mas sim ter uma conversa colaborativa. O foco é gerar valor, bem-estar e completude. Se ao final da conversa, tanto você quanto o recrutador sentirem que o tempo passou rápido e a troca foi genuinamente agradável, esse é o maior indicador de um bom "match" cultural e profissional.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Módulo 2: Dominando as Perguntas Comportamentais -->
+            <div class="bg-white rounded-lg shadow-md">
+                <button class="accordion-button w-full text-left p-6 flex justify-between items-center focus:outline-none">
+                    <span class="text-xl font-semibold text-blue-700">Módulo 2: Dominando as Perguntas Comportamentais</span>
+                    <svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div class="accordion-content space-y-6">
+                    <p>Use a **Técnica STAR** (Situação, Tarefa, Ação, Resultado) e conecte com suas experiências.</p>
+                    
+                    <div class="bg-gray-50 p-4 rounded-md border">
+                        <h4 class="font-bold mb-2">Pergunta: "Fale um pouco sobre você."</h4>
+                        <p class="text-sm text-gray-600 mb-2"><strong>Sua Estratégia:</strong> Siga o roteiro do seu novo "Resumo Profissional".</p>
+                        <p class="text-sm italic p-3 bg-blue-50 border-l-4 border-blue-300 rounded-r-lg">"Eu sou um profissional com um perfil híbrido. Tenho mais de uma década de experiência na linha de frente da enfermagem em alta complexidade no InCor, o que me deu uma visão profunda das necessidades dos pacientes e das equipes. Paralelamente, como Gestor de Dados na Suridata, desenvolvi uma forte competência analítica, usando dados para guiar decisões estratégicas. Estou finalizando minha Pós-Graduação em Gestão Hospitalar justamente para unir essas duas frentes e atuar de forma estratégica na gestão."</p>
+                    </div>
+
+                    <div class="bg-gray-50 p-4 rounded-md border">
+                        <h4 class="font-bold mb-2">Pergunta: "Me dê um exemplo de um desafio de liderança que você enfrentou."</h4>
+                        <p class="text-sm text-gray-600 mb-2"><strong>Sua Estratégia:</strong> Sua experiência na **Comissão de Ética** é perfeita aqui. Mostra liderança, maturidade e habilidade de mediação.</p>
+                        <div class="text-sm italic p-3 bg-blue-50 border-l-4 border-blue-300 rounded-r-lg space-y-2">
+                           <p><strong>(Situação):</strong> "Na Comissão de Ética do HCFMUSP, recebemos uma denúncia complexa de quebra de protocolo que estava gerando um conflito significativo entre dois membros da equipe."</p>
+                           <p><strong>(Tarefa):</strong> "Minha responsabilidade era conduzir uma análise sigilosa, ouvir ambos os lados de forma imparcial e mediar uma solução que protegesse o paciente e restaurasse a harmonia da equipe."</p>
+                           <p><strong>(Ação):</strong> "Organizei sessões de escuta individuais, usei como base o Código de Ética para orientar a discussão e, em seguida, facilitei uma reunião conjunta focada em processos, não em culpas. Propus um redesenho do fluxo de comunicação para evitar ambiguidades futuras."</p>
+                           <p><strong>(Resultado):</strong> "Como resultado, o conflito foi resolvido, a relação profissional da equipe foi restaurada e implementamos uma melhoria no processo que foi comunicada a todo o setor, prevenindo que o problema se repetisse."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Módulo 3: Perguntas de Case e Técnicas -->
+            <div class="bg-white rounded-lg shadow-md">
+                <button class="accordion-button w-full text-left p-6 flex justify-between items-center focus:outline-none">
+                    <span class="text-xl font-semibold text-blue-700">Módulo 3: Perguntas de Case e Técnicas</span>
+                    <svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div class="accordion-content">
+                    <p class="mb-4">Aqui você vai usar sua dupla experiência (clínica + dados) para se destacar. Eles apresentarão um problema e você, a solução.</p>
+                    <div class="bg-gray-50 p-4 rounded-md border">
+                        <h4 class="font-bold mb-2">Case Hipotético: "A taxa de reinternação de pacientes com insuficiência cardíaca está 15% acima da meta. Como gestor, o que você faria?"</h4>
+                        <p class="text-sm text-gray-600 mb-2"><strong>Sua Estratégia Vencedora:</strong> Combine a análise de dados da Suridata com a prática do InCor.</p>
+                        <div class="text-sm italic p-3 bg-blue-50 border-l-4 border-blue-300 rounded-r-lg space-y-2">
+                           <p><strong>1. Análise de Dados:</strong> "Primeiro, faria um mergulho nos dados, similar ao meu trabalho na Suridata, para mapear o perfil desses pacientes. Qual a origem? Quais comorbidades? Em que momento eles retornam? Precisamos de um diagnóstico preciso."</p>
+                           <p><strong>2. Mapeamento de Processos:</strong> "Em paralelo, usaria minha experiência do InCor para mapear toda a jornada do paciente, desde a admissão até a alta. Onde estão os gargalos? A orientação de alta está sendo eficaz?"</p>
+                           <p><strong>3. Ação e Indicadores:</strong> "Com base nesse diagnóstico, eu proporia um projeto piloto, como um programa de acompanhamento pós-alta. E o principal: definiria KPIs para monitorar o sucesso do projeto e apresentar relatórios de progresso para a diretoria."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Módulo 4: Suas Perguntas Para o Entrevistador -->
+            <div class="bg-white rounded-lg shadow-md">
+                <button class="accordion-button w-full text-left p-6 flex justify-between items-center focus:outline-none">
+                    <span class="text-xl font-semibold text-blue-700">Módulo 4: Suas Perguntas Para o Entrevistador</span>
+                    <svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div class="accordion-content">
+                    <p class="mb-4">Fazer perguntas inteligentes mostra que você é estratégico e está realmente interessado.</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>"Quais são os principais indicadores de desempenho (KPIs) para esta posição nos primeiros 6 meses?"</li>
+                        <li>"Qual é o maior desafio estratégico que a instituição está enfrentando e como esta vaga contribui para superá-lo?"</li>
+                        <li>"Como a cultura da organização incentiva a tomada de decisão baseada em dados e a inovação nos processos?"</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Módulo 5: Checklist Final -->
+            <div class="bg-white rounded-lg shadow-md">
+                <button class="accordion-button w-full text-left p-6 flex justify-between items-center focus:outline-none">
+                    <span class="text-xl font-semibold text-blue-700">Módulo 5: Checklist Final (A Saideira! rs)</span>
+                    <svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div class="accordion-content">
+                    <div id="checklist" class="space-y-3">
+                        <div class="checklist-item flex items-center">
+                            <input type="checkbox" id="item1" class="h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            <label for="item1" class="ml-3 text-gray-700">Pesquisar o Hospital: valores, notícias, acreditações (ONA, JCI).</label>
+                        </div>
+                        <div class="checklist-item flex items-center">
+                            <input type="checkbox" id="item2" class="h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            <label for="item2" class="ml-3 text-gray-700">Reler meu currículo otimizado e ter os resultados na ponta da língua.</label>
+                        </div>
+                        <div class="checklist-item flex items-center">
+                            <input type="checkbox" id="item3" class="h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            <label for="item3" class="ml-3 text-gray-700">Preparar 3 exemplos de sucesso usando a técnica STAR.</label>
+                        </div>
+                        <div class="checklist-item flex items-center">
+                            <input type="checkbox" id="item4" class="h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            <label for="item4" class="ml-3 text-gray-700">Vestir-se de forma profissional, alinhado com um cargo de gestão.</label>
+                        </div>
+                         <div class="checklist-item flex items-center">
+                            <input type="checkbox" id="item5" class="h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            <label for="item5" class="ml-3 text-gray-700">Confiar na minha trajetória. Ela é meu maior trunfo!</label>
+                        </div>
+                        <div class="mt-4 border-t pt-4 checklist-item flex items-center">
+                            <input type="checkbox" id="item6" class="h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            <label for="item6" class="ml-3 text-blue-800 font-bold">Verificação Final: A conversa foi leve e divertida? Meu objetivo é gerar valor e bem-estar.</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Módulo 6: Assessment de Competências de Gestão -->
+            <div class="bg-white rounded-lg shadow-md">
+                <button class="accordion-button w-full text-left p-6 flex justify-between items-center focus:outline-none">
+                    <span class="text-xl font-semibold text-blue-700">Módulo 6: Assessment de Competências de Gestão</span>
+                    <svg class="w-6 h-6 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div class="accordion-content">
+                    <div id="quiz-intro" class="text-center">
+                        <p class="mb-4">Este assessment avançado irá mapear seu perfil de liderança. Avalie as afirmações a seguir em uma escala de 1 a 5, refletindo sobre suas experiências e mentalidade como gestor sênior.</p>
+                        <h4 class="font-bold mb-2">Competências Avaliadas:</h4>
+                        <div class="text-sm text-left max-w-lg mx-auto bg-gray-50 p-4 rounded-lg border">
+                            <ul class="list-disc list-inside space-y-1">
+                                <li><strong>Visão de Negócio e Sustentabilidade:</strong> Alinhar a operação clínica com a saúde financeira da instituição.</li>
+                                <li><strong>Foco no Paciente e Qualidade:</strong> Garantir a excelência e segurança na jornada do paciente.</li>
+                                <li><strong>Liderança Humanizada e Cultura:</strong> Engajar, desenvolver e motivar equipes.</li>
+                                <li><strong>Mentalidade de Melhoria Contínua:</strong> Fomentar um ambiente de aprendizado e inovação.</li>
+                                <li><strong>Gestão de Processos e Fluxos:</strong> Otimizar a eficiência operacional e a colaboração.</li>
+                                <li><strong>Inteligência de Dados e Tecnologia:</strong> Utilizar dados e tecnologia para decisões estratégicas.</li>
+                            </ul>
+                        </div>
+                        <button id="start-quiz-btn" class="mt-6 bg-blue-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition-colors">Começar Assessment</button>
+                    </div>
+
+                    <div id="quiz-container" class="hidden">
+                        <div class="mb-4 w-full bg-gray-200 rounded-full h-2.5">
+                            <div id="quiz-progress-bar" class="bg-blue-600 h-2.5 rounded-full" style="width: 0%"></div>
+                        </div>
+                        <div class="text-center mb-6">
+                            <p id="question-counter" class="text-sm text-gray-500"></p>
+                            <p id="question-text" class="text-lg font-semibold mt-2"></p>
+                        </div>
+                        <div id="likert-scale-container" class="flex flex-col md:flex-row justify-center items-center gap-2 md:gap-3">
+                            <!-- Likert buttons will be inserted here -->
+                        </div>
+                    </div>
+
+                    <div id="results-container" class="hidden">
+                        <h3 class="text-2xl font-bold text-center mb-4 text-blue-800">Seu Perfil de Liderança Hospitalar</h3>
+                        <div class="w-full max-w-lg mx-auto mb-6">
+                            <canvas id="radar-chart"></canvas>
+                        </div>
+                        <div id="results-analysis">
+                            <!-- Analysis text will be inserted here -->
+                        </div>
+                         <button id="restart-quiz-btn" class="mt-6 mx-auto block bg-gray-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-gray-700 transition-colors">Refazer Assessment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Accordion functionality
+        const accordionButtons = document.querySelectorAll('.accordion-button');
+        accordionButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const wasActive = button.classList.contains('active');
+                // Close all other accordions to keep the UI clean
+                accordionButtons.forEach(otherButton => {
+                    if (otherButton !== button) {
+                        otherButton.classList.remove('active');
+                        otherButton.querySelector('svg').classList.remove('rotate-180');
+                    }
+                });
+                // Toggle the clicked one
+                if (!wasActive) {
+                    button.classList.add('active');
+                    button.querySelector('svg').classList.add('rotate-180');
+                }
+            });
+        });
+
+        // Checklist functionality
+        const checklistItems = document.querySelectorAll('.checklist-item input[type="checkbox"]');
+        checklistItems.forEach(item => {
+            item.addEventListener('change', (event) => {
+                const parentDiv = event.target.closest('.checklist-item');
+                if (event.target.checked) {
+                    parentDiv.classList.add('completed');
+                } else {
+                    parentDiv.classList.remove('completed');
+                }
+            });
+        });
+
+        // Quiz Data and Logic
+        const quizData = {
+            competencies: [
+                "Visão de Negócio e Sustentabilidade",
+                "Foco no Paciente e Qualidade",
+                "Liderança Humanizada e Cultura",
+                "Mentalidade de Melhoria Contínua",
+                "Gestão de Processos e Fluxos",
+                "Inteligência de Dados e Tecnologia"
+            ],
+            questions: [
+                // Visão de Negócio e Sustentabilidade
+                { text: "Acredito que a análise de ROI (Retorno sobre Investimento) para novos equipamentos médicos é tão crucial quanto a análise de sua eficácia clínica.", category: 0, reverseScore: false },
+                { text: "Decisões sobre a expansão de um serviço devem ser baseadas primariamente na demanda clínica, mesmo que isso impacte negativamente a margem de lucro no curto prazo.", category: 0, reverseScore: true },
+                { text: "Entendo e acompanho os principais direcionadores de custo do meu setor (ex: consumo de materiais, horas extras) para propor otimizações.", category: 0, reverseScore: false },
+                { text: "A negociação com fornecedores e planos de saúde é uma responsabilidade exclusiva do departamento financeiro, com pouca interferência da gestão assistencial.", category: 0, reverseScore: true },
+                { text: "Considero que o principal objetivo de um hospital é a sustentabilidade financeira, da qual a qualidade assistencial é uma consequência.", category: 0, reverseScore: true },
+                // Foco no Paciente e Qualidade
+                { text: "Utilizo ativamente o feedback de pacientes (pesquisas de satisfação, reclamações) como insumo para redesenhar processos assistenciais.", category: 1, reverseScore: false },
+                { text: "Protocolos de segurança, uma vez implementados, raramente precisam de revisão, a menos que ocorra um evento adverso grave.", category: 1, reverseScore: true },
+                { text: "Mapear a jornada completa do paciente, incluindo pontos de contato fora da minha área direta, é fundamental para identificar falhas e oportunidades.", category: 1, reverseScore: false },
+                { text: "Acredito que a responsabilidade pela qualidade do atendimento é de cada profissional individualmente, mais do que do sistema ou dos processos.", category: 1, reverseScore: true },
+                { text: "Priorizo a implementação de comitês de qualidade e segurança que envolvam equipes multidisciplinares para tomar decisões.", category: 1, reverseScore: false },
+                // Liderança Humanizada e Cultura
+                { text: "Dedico tempo regular para conversas de feedback individuais com minha equipe, focando tanto em pontos de melhoria quanto em reconhecimento.", category: 2, reverseScore: false },
+                { text: "Em situações de conflito, minha prioridade é encontrar uma solução rápida para manter a paz, mesmo que a causa raiz não seja totalmente resolvida.", category: 2, reverseScore: true },
+                { text: "Acredito que dar autonomia à equipe para tomar decisões operacionais aumenta o engajamento e a responsabilidade.", category: 2, reverseScore: false },
+                { text: "Um líder deve ter todas as respostas técnicas para ser respeitado pela sua equipe.", category: 2, reverseScore: true },
+                { text: "Promovo ativamente um ambiente onde os membros da equipe se sintam seguros para admitir erros sem medo de punição.", category: 2, reverseScore: false },
+                // Mentalidade de Melhoria Contínua
+                { text: "Vejo um evento adverso não como um fracasso, mas como uma oportunidade valiosa para aprender e fortalecer nossos sistemas.", category: 3, reverseScore: false },
+                { text: "Prefiro manter processos que funcionam bem, mesmo que existam novas abordagens no mercado, para evitar o risco da mudança.", category: 3, reverseScore: true },
+                { text: "Incentivo minha equipe a experimentar pequenas melhorias em seus fluxos de trabalho e a compartilhar os resultados, sejam eles positivos ou negativos.", category: 3, reverseScore: false },
+                { text: "O tempo gasto em reuniões de 'lições aprendidas' após um projeto poderia ser melhor utilizado em tarefas operacionais.", category: 3, reverseScore: true },
+                { text: "Busco ativamente benchmarks e melhores práticas de outras instituições de saúde para adaptar e aplicar em minha realidade.", category: 3, reverseScore: false },
+                // Gestão de Processos e Fluxos
+                { text: "Acredito que a padronização de processos assistenciais é essencial para reduzir a variabilidade e garantir a segurança, mesmo que limite a autonomia individual.", category: 4, reverseScore: false },
+                { text: "Um gargalo no fluxo de alta de pacientes é um problema exclusivo do setor de altas, e não de toda a cadeia de atendimento.", category: 4, reverseScore: true },
+                { text: "Para otimizar a colaboração, organizo reuniões periódicas entre meu setor e áreas interdependentes (ex: farmácia, laboratório, centro cirúrgico).", category: 4, reverseScore: false },
+                { text: "Se um processo está funcionando, não há necessidade de medi-lo com indicadores, pois 'time que está ganhando não se mexe'.", category: 4, reverseScore: true },
+                { text: "Utilizo ferramentas visuais, como fluxogramas, para mapear e discutir processos com a equipe, facilitando a identificação de pontos de atrito.", category: 4, reverseScore: false },
+                // Inteligência de Dados e Tecnologia
+                { text: "Tomo decisões importantes sobre alocação de recursos baseadas mais na minha experiência e intuição do que em dados e relatórios.", category: 5, reverseScore: true },
+                { text: "Defendo que a precisão e a completude dos dados inseridos no prontuário eletrônico são fundamentais para a gestão e não apenas uma tarefa burocrática.", category: 5, reverseScore: false },
+                { text: "Apresento regularmente para minha equipe os principais KPIs do setor, explicando o que significam e como o trabalho deles impacta esses números.", category: 5, reverseScore: false },
+                { text: "A implementação de uma nova tecnologia de saúde deve ser liderada pela equipe de TI, com a gestão assistencial atuando como cliente final.", category: 5, reverseScore: true },
+                { text: "Utilizo dados de perfil populacional, como no meu trabalho na Suridata, para planejar proativamente as necessidades de recursos do meu setor.", category: 5, reverseScore: false },
+            ]
+        };
+
+        const quizState = {
+            currentQuestionIndex: 0,
+            scores: new Array(quizData.competencies.length).fill(0),
+            maxScores: new Array(quizData.competencies.length).fill(0),
+            radarChartInstance: null,
+        };
+
+        // DOM Elements
+        const quizIntro = document.getElementById('quiz-intro');
+        const quizContainer = document.getElementById('quiz-container');
+        const resultsContainer = document.getElementById('results-container');
+        const questionCounterEl = document.getElementById('question-counter');
+        const questionTextEl = document.getElementById('question-text');
+        const likertContainer = document.getElementById('likert-scale-container');
+        const progressBar = document.getElementById('quiz-progress-bar');
+
+        function startQuiz() {
+            quizState.currentQuestionIndex = 0;
+            quizState.scores.fill(0);
+            quizState.maxScores.fill(0);
+            quizData.questions.forEach(q => {
+                quizState.maxScores[q.category] += 5;
+            });
+            
+            quizIntro.classList.add('hidden');
+            resultsContainer.classList.add('hidden');
+            quizContainer.classList.remove('hidden');
+            displayQuestion();
+        }
+        
+        function displayQuestion() {
+            const question = quizData.questions[quizState.currentQuestionIndex];
+            questionCounterEl.textContent = `Pergunta ${quizState.currentQuestionIndex + 1} de ${quizData.questions.length}`;
+            questionTextEl.textContent = question.text;
+            progressBar.style.width = `${((quizState.currentQuestionIndex) / quizData.questions.length) * 100}%`;
+            
+            const likertOptions = [
+                { text: 'Discordo Totalmente', value: 1 },
+                { text: 'Discordo', value: 2 },
+                { text: 'Neutro', value: 3 },
+                { text: 'Concordo', value: 4 },
+                { text: 'Concordo Totalmente', value: 5 },
+            ];
+
+            likertContainer.innerHTML = '';
+            likertOptions.forEach(opt => {
+                const button = document.createElement('button');
+                button.textContent = opt.text;
+                button.value = opt.value;
+                button.className = 'likert-button border border-gray-300 py-2 px-3 rounded-lg text-sm md:text-base w-full md:w-auto';
+                button.onclick = () => selectAnswer(opt.value);
+                likertContainer.appendChild(button);
+            });
+        }
+
+        function selectAnswer(value) {
+            const question = quizData.questions[quizState.currentQuestionIndex];
+            let score = parseInt(value);
+            if (question.reverseScore) {
+                score = 6 - score;
+            }
+            quizState.scores[question.category] += score;
+            
+            quizState.currentQuestionIndex++;
+            if (quizState.currentQuestionIndex < quizData.questions.length) {
+                displayQuestion();
+            } else {
+                progressBar.style.width = '100%';
+                showResults();
+            }
+        }
+
+        function showResults() {
+            quizContainer.classList.add('hidden');
+            resultsContainer.classList.remove('hidden');
+
+            const finalScores = quizState.scores.map((score, index) => {
+                return (score / quizState.maxScores[index]) * 100;
+            });
+
+            createRadarChart(finalScores);
+            generateAnalysis(finalScores);
+        }
+        
+        function generateAnalysis(finalScores) {
+            const analysisEl = document.getElementById('results-analysis');
+            analysisEl.innerHTML = ''; 
+            
+            finalScores.forEach((score, index) => {
+                const competency = quizData.competencies[index];
+                let title, text, suggestion;
+
+                if (score >= 75) {
+                    title = `<h4 class="font-bold text-green-700">Ponto Forte: ${competency}</h4>`;
+                    text = `Sua pontuação indica que esta é uma área de grande domínio. Você demonstra uma mentalidade e práticas alinhadas com a liderança sênior.`;
+                    suggestion = `Na entrevista, prepare exemplos concretos que ilustrem essa força. Por exemplo, para 'Inteligência de Dados', use um case da Suridata. Para 'Liderança', use sua experiência na Comissão de Ética.`;
+                } else if (score >= 50) {
+                    title = `<h4 class="font-bold text-yellow-700">Área de Desenvolvimento: ${competency}</h4>`;
+                    text = `Você possui uma boa base nesta competência, mas há espaço para aprofundamento para se destacar como gestor sênior.`;
+                    suggestion = `Reflita sobre situações em que você poderia ter aplicado mais essa competência. Na entrevista, se questionado, demonstre autoconsciência e vontade de se desenvolver, mencionando sua pós-graduação como um passo nessa direção.`;
+                } else {
+                    title = `<h4 class="font-bold text-red-700">Ponto de Atenção: ${competency}</h4>`;
+                    text = `Esta competência requer um foco maior no seu plano de desenvolvimento para assumir uma posição de gestão estratégica.`;
+                    suggestion = `Busque leituras, cursos ou mentorias sobre este tema. Na entrevista, evite focar em exemplos desta área, a menos que seja para mostrar um aprendizado a partir de um desafio. Demonstre que você está ciente e proativamente buscando evoluir.`;
+                }
+                
+                const analysisBlock = `
+                    <div class="text-left bg-gray-50 p-4 rounded-lg border mb-4">
+                        ${title}
+                        <p class="text-sm mt-1">${text}</p>
+                        <p class="text-sm mt-2 font-semibold text-blue-800">Dica para a Entrevista:</p>
+                        <p class="text-sm italic">${suggestion}</p>
+                    </div>
+                `;
+                analysisEl.innerHTML += analysisBlock;
+            });
+        }
+
+        function createRadarChart(data) {
+            if (quizState.radarChartInstance) {
+                quizState.radarChartInstance.destroy();
+            }
+            const ctx = document.getElementById('radar-chart').getContext('2d');
+            quizState.radarChartInstance = new Chart(ctx, {
+                type: 'radar',
+                data: {
+                    labels: quizData.competencies,
+                    datasets: [{
+                        label: 'Seu Perfil (%)',
+                        data: data,
+                        backgroundColor: 'rgba(37, 99, 235, 0.2)',
+                        borderColor: 'rgba(37, 99, 235, 1)',
+                        borderWidth: 2,
+                        pointBackgroundColor: 'rgba(37, 99, 235, 1)',
+                    }]
+                },
+                options: {
+                    scales: {
+                        r: {
+                            suggestedMin: 0,
+                            suggestedMax: 100,
+                            ticks: { stepSize: 20 },
+                            pointLabels: { font: { size: 11 } }
+                        }
+                    }
+                }
+            });
+        }
+
+        document.getElementById('start-quiz-btn').addEventListener('click', startQuiz);
+        document.getElementById('restart-quiz-btn').addEventListener('click', startQuiz);
+    </script>
+
+</body>
+</html>
